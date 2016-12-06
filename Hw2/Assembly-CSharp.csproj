@@ -52,7 +52,7 @@
      <Compile Include="Assets\2.scripts\tankMove.cs" />
      <Compile Include="Assets\2.scripts\trackMove.cs" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>/Users/Shared/Unity/Hw2/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>/Users/selab/git/Course_ComputerGraphic/Hw2/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
