@@ -3,6 +3,7 @@ using System.Collections;
 
 public class CameraController : MonoBehaviour {
 	public Camera[] cameraArray;
+	public Camera globalCamera;
 	private int currentCameraIdx;
 
 
@@ -13,7 +14,7 @@ public class CameraController : MonoBehaviour {
 			cameraArray [i].enabled = i == currentCameraIdx? true: false;
 		}
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetButtonDown ("CameraSwitch")) {
@@ -26,5 +27,12 @@ public class CameraController : MonoBehaviour {
 		cameraArray [currentCameraIdx].enabled = false;
 		cameraArray [nextCameraIdx].enabled = true;
 		currentCameraIdx = nextCameraIdx;
+	}
+
+	public void changeToGlobalCamera(){
+		for (int i = 0; i < cameraArray.Length; i++) {
+			cameraArray [i].enabled = false;
+		}
+		globalCamera.enabled = true;
 	}
 }

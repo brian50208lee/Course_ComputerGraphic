@@ -9,8 +9,8 @@ public class EnemyAI : MonoBehaviour {
 	public GameObject firePoint;
 	public Rigidbody bullet;
 
-	private int enemySpeed = 2;
-	private int rotateSpeed = 2;
+	private int enemySpeed = 8;
+	private int rotateSpeed = 1;
 	private float bulletSeed = 5;
 	private float bulletCD = 2f;
 	private float HP = 100f;
@@ -42,7 +42,7 @@ public class EnemyAI : MonoBehaviour {
 			enemyTank.transform.Rotate (0, rotateSpeed, 0);
 		} else if (rotate < -0.05) {
 			enemyTank.transform.Rotate (0, -1 * rotateSpeed, 0);
-		} else if (distance < 1000) {
+		} else if (distance < 10000) {
 			if (cd != 0) {
 				return;
 			}
@@ -51,7 +51,7 @@ public class EnemyAI : MonoBehaviour {
 			shoot.velocity = direction;
 			Physics.IgnoreCollision (firePoint.transform.root.GetComponent<Collider> (), shoot.GetComponent<Collider> ());
 			cd = bulletCD;
-		} else if (distance < 3000) {
+		} else if (distance < 50000) {
 			enemyTank.transform.Translate (0, 0, (-1) * enemySpeed * Time.smoothDeltaTime);
 		}
 	}
@@ -71,7 +71,7 @@ public class EnemyAI : MonoBehaviour {
 		hpBar.transform.localScale = new Vector3(scale.x, HP/100.0f*0.5f, scale.z);
 
 		if(HP <= 0){
-			Destroy(enemyTank);//刪除砲彈
+			Destroy(enemyTank);
 		}
 	}
 	

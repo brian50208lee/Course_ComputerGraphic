@@ -47,10 +47,18 @@
   <ItemGroup>
      <Compile Include="Assets\2.scripts\CameraController.cs" />
      <Compile Include="Assets\2.scripts\EnemyAI.cs" />
+     <Compile Include="Assets\2.scripts\MyHP.cs" />
      <Compile Include="Assets\2.scripts\explosion.cs" />
      <Compile Include="Assets\2.scripts\fire.cs" />
      <Compile Include="Assets\2.scripts\tankMove.cs" />
      <Compile Include="Assets\2.scripts\trackMove.cs" />
+     <Compile Include="Assets\TerrainFoW\Samples\GuiAux.cs" />
+     <Compile Include="Assets\TerrainFoW\Samples\Test.cs" />
+     <Compile Include="Assets\TerrainFoW\Scripts\RTSCam.cs" />
+     <Compile Include="Assets\TerrainFoW\Scripts\TerrainFoW.cs" />
+     <None Include="Assets\TerrainFoW\Help\Tutorial.txt" />
+     <None Include="Assets\readme.txt" />
+     <None Include="Assets\TerrainFoW\Help\About.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>/Users/selab/git/Course_ComputerGraphic/Hw2/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
@@ -63,6 +71,10 @@
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{049AEBDA-8417-E540-EC32-3B5984298CDC}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

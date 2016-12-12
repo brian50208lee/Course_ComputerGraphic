@@ -1,6 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
+Project("{7C3273E0-1066-2002-6213-643ED60DE972}") = "Hw2", "Assembly-CSharp-firstpass.csproj", "{049AEBDA-8417-E540-EC32-3B5984298CDC}"
+EndProject
 Project("{7C3273E0-1066-2002-6213-643ED60DE972}") = "Hw2", "Assembly-CSharp.csproj", "{3839F4F6-5F53-274A-7C99-6BD406332CB5}"
 EndProject
 Global
@@ -9,6 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{049AEBDA-8417-E540-EC32-3B5984298CDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{049AEBDA-8417-E540-EC32-3B5984298CDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{049AEBDA-8417-E540-EC32-3B5984298CDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{049AEBDA-8417-E540-EC32-3B5984298CDC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3839F4F6-5F53-274A-7C99-6BD406332CB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3839F4F6-5F53-274A-7C99-6BD406332CB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3839F4F6-5F53-274A-7C99-6BD406332CB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
