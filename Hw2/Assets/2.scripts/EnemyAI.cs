@@ -9,10 +9,10 @@ public class EnemyAI : MonoBehaviour {
 	public GameObject firePoint;
 	public Rigidbody bullet;
 
-	private int enemySpeed = 8;
+	private int enemySpeed = 15;
 	private int rotateSpeed = 1;
 	private float bulletSeed = 5;
-	private float bulletCD = 2f;
+	private float bulletCD = 3f;
 	private float HP = 100f;
 
 	private float cd;
@@ -42,7 +42,7 @@ public class EnemyAI : MonoBehaviour {
 			enemyTank.transform.Rotate (0, rotateSpeed, 0);
 		} else if (rotate < -0.05) {
 			enemyTank.transform.Rotate (0, -1 * rotateSpeed, 0);
-		} else if (distance < 10000) {
+		} else if (distance < 5000) {
 			if (cd != 0) {
 				return;
 			}
